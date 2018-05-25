@@ -20,9 +20,9 @@ Step 2 : Install PHP
 For Testing this php example we need the following components
        service-center, php server, mesher provider, php client and mesher consumer
   
-     1)  Start the service-center
+     1)   Start the service-center
      
-     2)  Copy api.php and data.php in /var/www/html/
+     2)   Copy api.php and data.php in /var/www/html/
 
      3)   verify if the api is working by using curl
           curl http://127.0.0.1/api.php?name=book
@@ -36,17 +36,17 @@ For Testing this php example we need the following components
           Now start the mesher
           ./PHP-Mesher-Example/mesher/mesher
     
-    5)  In a new terminal verify if provider mesher is working
-        export http_proxy=http://127.0.0.1:30101  (mesher listen address as specified in chassis.yaml)
-        curl http://hellomesher/api.php?name=book
+    5)    In a new terminal verify if provider mesher is working
+          export http_proxy=http://127.0.0.1:30101  (mesher listen address as specified in chassis.yaml)
+          curl http://hellomesher/api.php?name=book
 
-    6) Start the mesher consumer
-       start the mesher by modifiing the listen address(192.168.42.203:30108) in chassis.ymal, serverUri in mesher.yaml change the port and the        microservicename as hellomesherconsumer in microservice.yaml
-        start the mesher.
+    6)    Start the mesher consumer
+          start the mesher by modifiing the listen address(192.168.42.203:30108) in chassis.ymal, serverUri in mesher.yaml             change the port and the        microservicename as hellomesherconsumer in microservice.yaml
+          start the mesher.
 
-    6) In a new terminal export proxy and run client
-        export http_proxy=http://127.0.0.1:30108
-        php client.php
+    7)    In a new terminal export proxy and run client
+          export http_proxy=http://127.0.0.1:30108
+          php client.php
 
-        get the result from the api.
+          get the result from the api.
    
