@@ -1,6 +1,6 @@
 <?php
-		$name = "book";
-	        	
+                
+		$name = getenv("Item");
 		$url = "http://hellomesher/api.php?name=".$name;
 		
 		$client = curl_init($url);
