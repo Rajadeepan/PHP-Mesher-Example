@@ -6,6 +6,8 @@
  
      docker load -i mesher.tar
  3) update the servicecenter ip addres in docker-compose.yml
- 4) docker-compose up 
- 5) curl request http://[ipaddress of the client]:80/client.php
+ 4) docker-compose up [./mesher directory]
+ 5) To verify the php client and php server communication
+ 
+       curl request http://[ipaddress of the client]:80/client.php
       
